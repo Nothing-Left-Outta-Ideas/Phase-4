@@ -26,7 +26,7 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-synopsis").waypoint(
+  $(".js--section-listening").waypoint(
     function (direction) {
       if (direction == "down") {
         $(".about-us").addClass("underline");
@@ -53,13 +53,13 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-symptoms").waypoint(
+  $(".js--section-nonverbal").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".symptoms").addClass("underline");
+        $(".nonverbal").addClass("underline");
       }
       if (direction == "up") {
-        $(".symptoms").removeClass("underline");
+        $(".nonverbal").removeClass("underline");
       }
     },
     {
@@ -67,15 +67,15 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-cause").waypoint(
+  $(".js--section-clarity").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".symptoms").removeClass("underline");
-        $(".causes").addClass("underline");
+        $(".nonverbal").removeClass("underline");
+        $(".clarity").addClass("underline");
       }
       if (direction == "up") {
-        $(".symptoms").addClass("underline");
-        $(".causes").removeClass("underline");
+        $(".nonverbal").addClass("underline");
+        $(".clarity").removeClass("underline");
       }
     },
     {
@@ -83,15 +83,31 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-effect").waypoint(
+  $(".js--section-clarity-div").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".causes").removeClass("underline");
-        $(".effect").addClass("underline");
+        $(".js--section-clarity-div").css("margin-right", "0%");
       }
       if (direction == "up") {
-        $(".causes").addClass("underline");
-        $(".effect").removeClass("underline");
+        $(".js--section-clarity-div").css("margin-right", "-6%");
+      }
+    },
+    {
+      offset: "25%",
+    }
+  );
+
+  $(".js--section-friend").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".clarity").removeClass("underline");
+        $(".friend").addClass("underline");
+        $(".js--section-clarity-div").css("margin-right", "-3%");
+      }
+      if (direction == "up") {
+        $(".clarity").addClass("underline");
+        $(".friend").removeClass("underline");
+        $(".js--section-clarity-div").css("margin-right", "0%");
       }
     },
     {
@@ -99,15 +115,15 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-solution").waypoint(
+  $(".js--section-medium").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".effect").removeClass("underline");
-        $(".solution").addClass("underline");
+        $(".friend").removeClass("underline");
+        $(".medium").addClass("underline");
       }
       if (direction == "up") {
-        $(".effect").addClass("underline");
-        $(".solution").removeClass("underline");
+        $(".friend").addClass("underline");
+        $(".medium").removeClass("underline");
       }
     },
     {
@@ -115,81 +131,81 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--solution-support-1").waypoint(
+  $(".js--medium-support-1").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-1").addClass("solution-support-ls-hover");
+        $(".js--medium-support-1").addClass("medium-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-1").removeClass("solution-support-ls-hover");
+        $(".js--medium-support-1").removeClass("medium-support-ls-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-2").waypoint(
+  $(".js--medium-support-2").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-2").addClass("solution-support-rs-hover");
-        $(".js--solution-support-1").removeClass("solution-support-ls-hover");
+        $(".js--medium-support-2").addClass("medium-support-rs-hover");
+        $(".js--medium-support-1").removeClass("medium-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-2").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-1").addClass("solution-support-ls-hover");
+        $(".js--medium-support-2").removeClass("medium-support-rs-hover");
+        $(".js--medium-support-1").addClass("medium-support-ls-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-3").waypoint(
+  $(".js--medium-support-3").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-3").addClass("solution-support-ls-hover");
-        $(".js--solution-support-2").removeClass("solution-support-rs-hover");
+        $(".js--medium-support-3").addClass("medium-support-ls-hover");
+        $(".js--medium-support-2").removeClass("medium-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-3").removeClass("solution-support-ls-hover");
-        $(".js--solution-support-2").addClass("solution-support-rs-hover");
+        $(".js--medium-support-3").removeClass("medium-support-ls-hover");
+        $(".js--medium-support-2").addClass("medium-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-4").waypoint(
+  $(".js--medium-support-4").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-4").addClass("solution-support-rs-hover");
-        $(".js--solution-support-3").removeClass("solution-support-ls-hover");
+        $(".js--medium-support-4").addClass("medium-support-rs-hover");
+        $(".js--medium-support-3").removeClass("medium-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-4").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-3").addClass("solution-support-ls-hover");
+        $(".js--medium-support-4").removeClass("medium-support-rs-hover");
+        $(".js--medium-support-3").addClass("medium-support-ls-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  
-  $(".js--solution-conclusion").waypoint(
+
+  $(".js--medium-conclusion").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-conclusion").addClass("solution-conclusion-hover");
-        $(".js--solution-support-4").removeClass("solution-support-rs-hover");
+        $(".js--medium-conclusion").addClass("medium-conclusion-hover");
+        $(".js--medium-support-4").removeClass("medium-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-conclusion").removeClass("solution-conclusion-hover");
-        $(".js--solution-support-4").addClass("solution-support-rs-hover");
+        $(".js--medium-conclusion").removeClass("medium-conclusion-hover");
+        $(".js--medium-support-4").addClass("medium-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  
+
   /*
     $('.nav-section').ready(function () {
         var deviceWidth = $(window).width();

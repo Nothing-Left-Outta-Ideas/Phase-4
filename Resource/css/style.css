@@ -33,18 +33,18 @@ body {
 /*────────────────── 
      Scrollbar
 ──────────────────*/
-::-webkit-Scrollbar{
-  width: 5px; 
-background: rgba(5,5,5,1);
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(5, 5, 5, 1);
 }
-::-webkit-Scrollbar-thumb{
-border-radius: 10px;
-background: black;
-box-shadow: inset 0 0 20px rgba(245, 245, 245, 0.671);
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #00ff19;
+  box-shadow: inset 0 0 20px rgba(245, 245, 245, 0.671);
 }
-::-webkit-Scrollbar-track{
-margin-top: 80px;
-border-radius: 10px;
+::-webkit-scrollbar-track {
+  margin-top: 55px;
+  border-radius: 10px;
 }
 
 /*---------------------------------------*/
@@ -140,10 +140,10 @@ a {
 }
 
 #section-cover h2,
-.section-cause h2,
-.section-symptoms h2,
-.section-effect h2,
-.section-solution h2,
+.section-clarity h2,
+.section-nonverbal h2,
+.section-friend h2,
+.section-medium h2,
 .footer-title {
   width: fit-content;
   font-size: 240%;
@@ -154,24 +154,24 @@ a {
   transition: all 0.2s;
 }
 
-.section-cause h2,
+.section-clarity h2,
 #section-cover h2,
-.section-symptoms h2,
-.section-effect h2,
-.section-solution h2 {
+.section-nonverbal h2,
+.section-friend h2,
+.section-medium h2 {
   border-color: #00ff19;
 }
 
 #section-cover h2:hover,
 .footer-title:hover,
-.section-cause h2:hover,
-.section-symptoms h2:hover,
-.section-effect h2:hover,
-.section-solution h2:hover {
+.section-clarity h2:hover,
+.section-nonverbal h2:hover,
+.section-friend h2:hover,
+.section-medium h2:hover {
   transform: scale(1.05);
 }
 
-#section-synopsis h2 {
+#section-listening h2 {
   width: fit-content;
   position: relative;
   height: 110px;
@@ -189,12 +189,12 @@ a {
   transition: all 0.2s;
 }
 
-#section-synopsis h2:hover {
+#section-listening h2:hover {
   transform: translateX(-52.5%);
 }
 
-#section-synopsis-detail h2,
-.solution-h2 {
+#section-listening-detail h2,
+.medium-h2 {
   width: fit-content;
   position: relative;
   display: block;
@@ -211,8 +211,8 @@ a {
   transition: all 0.2s;
 }
 
-#section-synopsis-detail h2:hover,
-.solution-h2:hover {
+#section-listening-detail h2:hover,
+.medium-h2:hover {
   transform: translateX(52.5%);
 }
 
@@ -258,9 +258,9 @@ header {
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-    url(img/depression.jpg);
+    url(img/communication-2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   z-index: 10;
 }
@@ -476,9 +476,29 @@ nav {
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 1)
     ),
+    linear-gradient(
+      80deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
     url(img/cover.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
   box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
@@ -506,57 +526,55 @@ nav {
   transform: scale(1.05);
 }
 
-/*----------------------------------------------- SECTION-synopsis  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-listening  ---------------------------------------------------*/
 
-#section-synopsis {
+#section-listening {
   width: 100%;
   padding: 30px 12.5%;
   z-index: 20;
 }
 
-#section-synopsis div:first-child div {
+#section-listening div:first-child div {
   padding-top: 32px;
 }
 
-#synopsis-svg {
+#listening-svg {
   width: 255px;
   height: 108px;
   margin-top: -24px;
   float: right;
 }
 
-.synopsis-para-row {
+.listening-para-row {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
       rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url(img/synopsis.jpg);
-  background-size: contain;
-  background-position: left;
+    url(img/listening.jpg);
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
+  height: 35vh;
 }
 
-.synopsis-para-row div {
+.listening-para-row div {
   float: right;
 }
 
-/*----------------------------------------------- SECTION-synopsis-detail  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-listening-detail  ---------------------------------------------------*/
 
-#section-synopsis-detail {
+#section-listening-detail {
   padding: 30px 2.5%;
   width: 90%;
   background: #4fc6fc;
@@ -569,7 +587,7 @@ nav {
   text-align: center;
 }
 
-#section-synopsis-detail img {
+#section-listening-detail img {
   display: block;
   width: 100px;
   height: 100px;
@@ -606,28 +624,28 @@ nav {
   padding: 30px;
 }
 
-/*----------------------------------------------- SECTION-Symptoms,cause,effect  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-nonverbal,clarity,friend  ---------------------------------------------------*/
 
-.section-cause,
-.section-symptoms {
+.section-clarity,
+.section-nonverbal {
   padding: 55px 2.5%;
   box-shadow: 0px 21px 10px -18px rgba(32, 33, 36, 0.75) inset;
 }
 
-#section-cause-link,
-#section-symptoms-link,
-#section-effect-link {
+#section-clarity-link,
+#section-nonverbal-link,
+#section-friend-link {
   margin-top: 0 !important;
   box-shadow: 0 0px 10px 2px rgba(32, 33, 36, 0.75);
   z-index: 10;
 }
-#section-symptoms-link,
-#section-effect-link {
+#section-nonverbal-link,
+#section-friend-link {
   height: 54px;
 }
 
-.section-cause div li h3,
-.section-effect h3 {
+.section-clarity div li h3,
+.section-friend h3 {
   width: fit-content;
   margin: 30px 0 15px 0;
   padding: 0 10px 0 0;
@@ -635,14 +653,14 @@ nav {
   transition: all 0.2s;
 }
 
-.section-cause div li h3:hover,
-.section-effect h3:hover {
+.section-clarity div li h3:hover,
+.section-friend h3:hover {
   border-color: #00ff19;
 }
 
-/*----------------------------------------------- SECTION-SYMPTOMS  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-nonverbal  ---------------------------------------------------*/
 
-.section-symptoms {
+.section-nonverbal {
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0),
@@ -654,60 +672,65 @@ nav {
       rgba(34, 34, 34, 1),
       rgba(34, 34, 34, 1)
     ),
-    url(img/Symptoms.png);
+    url(img/nonverbal.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff;
 }
 
-.section-symptoms div li {
+.section-nonverbal div li {
   margin: 10px 0 0 0;
 }
 
-.section-symptoms div li:first-child {
+.section-nonverbal div li:first-child {
   margin-top: 30px;
 }
 
-/*----------------------------------------------- SECTION-CAUSE  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-clarity  ---------------------------------------------------*/
 
-.section-cause {
-  background-image: url(img/causes.jpg);
+.section-clarity {
+  background-image: url(img/clarity-2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  padding: 55px 0% 55px 2.5%;
+  background-position: center;
 }
 
-.section-cause div {
+.section-clarity div {
   position: relative;
   text-align: right;
   height: fit-content;
   padding: 55px;
-  width: 58%;
-  left: 48%;
+  padding-right: calc(55px + 6%);
+  width: 56%;
+  margin-right: -6%;
   border-radius: 31px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   background-color: #fff;
-  transform: translate(-50%, 0);
   text-align: center;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.26);
+  transition: all 0.3s;
 }
 
-.section-cause div img {
+.section-clarity div img {
   transform-origin: center;
   transition: all 0.3s;
 }
 
-.section-cause div img:hover {
+.section-clarity div img:hover {
   transform: scale(1.05);
 }
 
-/*----------------------------------------------- SECTION-EFFECT  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-friend  ---------------------------------------------------*/
 
-.section-effect {
+.section-friend {
   padding: 0px;
 }
 
-.effect-1 {
+.friend-1 {
   box-shadow: 0px 21px 10px -18px rgba(32, 33, 36, 0.75) inset;
   background-image: linear-gradient(
       to left,
@@ -720,13 +743,13 @@ nav {
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url(img/effect.jpg);
+    url(img/friend.jpg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-.effect-2 {
+.friend-2 {
   box-shadow: 0px -11px 10px -18px rgba(0, 0, 0, 0.75) inset;
   background-image: linear-gradient(
       to right,
@@ -739,14 +762,14 @@ nav {
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url(img/effect-2.jpg);
+    url(img/friend-2-1.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   text-align: right;
 }
 
-.effect-ls {
+.friend-ls {
   width: 100%;
   margin: 0;
   padding: 55px 2.5% 0px 2.5%;
@@ -808,7 +831,7 @@ nav {
   background-repeat: no-repeat;
 }
 
-.effect-rs {
+.friend-rs {
   width: 100%;
   margin: 0;
   padding: 0px 2.5% 55px 2.5%;
@@ -870,42 +893,42 @@ nav {
   background-repeat: no-repeat;
   text-align: right;
 }
-.effect-rs div {
+.friend-rs div {
   float: right;
 }
 
-.effect-sep {
+.friend-sep {
   width: 100%;
   height: 55px;
 }
 
-/*----------------------------------------------- SECTION-SOLUTION  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-medium  ---------------------------------------------------*/
 
-.section-solution {
+.section-medium {
   background-color: rgb(255, 250, 250);
   box-shadow: 0 0px 10px 2px rgba(32, 33, 36, 0.75);
   padding: 55px 0%;
 }
 
-#solution-main-para {
+#medium-main-para {
   width: 62.5%;
   margin: 0 auto;
   text-align: center;
 }
 
-.solution-para-container {
+.medium-para-container {
   margin: 55px 0 0 0;
   background-color: #181818;
   padding: 55px 0%;
   position: relative;
 }
 
-.solution-para-container:first-child {
+.medium-para-container:first-child {
   margin-top: 55px;
 }
 
-.solution-support-1,
-.solution-support-3 {
+.medium-support-1,
+.medium-support-3 {
   background-color: #fff;
   width: 85%;
   margin: 0;
@@ -918,18 +941,18 @@ nav {
   left: 0;
 }
 
-.solution-support-3 {
+.medium-support-3 {
   margin: 55px 0 0 0;
 }
 
-.solution-support-ls-hover {
+.medium-support-ls-hover {
   width: calc(91.5% + 15px) !important;
   border-left: 7.5vw solid #fff !important;
   border-right: 7.5px solid #00ff19 !important;
 }
 
-.solution-support-2,
-.solution-support-4 {
+.medium-support-2,
+.medium-support-4 {
   background-color: #fff;
   width: 85%;
   margin: 55px 0 0 0;
@@ -942,19 +965,19 @@ nav {
   transform: translate(-41.2%, 0);
 }
 
-.solution-support-rs-hover {
+.medium-support-rs-hover {
   left: calc(50% - 4.3px);
   width: calc(92.5% + 15px);
   border-left: 7.5px solid #00ff19;
   border-right: 7.5vw solid #fff;
 }
 
-.solution-conclusion {
+.medium-conclusion {
   width: 100%;
   margin: 55px 0 0 0;
   padding: 9.5% 2.5% 2% 2.5%;
   text-align: center;
-  background-image: url(img/solution-conclusion.jpg);
+  background-image: url(img/medium-conclusion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -963,14 +986,20 @@ nav {
   transition: all 0.3s;
 }
 
-.solution-conclusion-hover {
+.medium-conclusion-hover {
   transform: scale(1.02);
 }
 
-.solution-conclusion h3 {
+.medium-conclusion h3 {
   width: 50%;
   margin: 0 auto;
   line-height: 1.2rem;
+  padding: 30px;
+}
+
+#h3-black {
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 #h3-white {
@@ -978,6 +1007,7 @@ nav {
   clip-path: polygon(0% 0, 50% 0%, 50% 100%, 0 100%);
   position: relative;
   transform: translate(0, -100%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /*----------------------------------------------- FOOTER ---------------------------------------------------*/
