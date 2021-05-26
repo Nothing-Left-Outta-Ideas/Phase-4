@@ -329,16 +329,16 @@ nav {
 }
 
 .nav-section {
-  float: right;
   margin: 0;
   list-style: none;
   position: absolute;
   right: 1%;
-  width: 100%;
+  width: 100vw;
   height: 55px;
   position: absolute;
   top: 0;
-  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .nav-section li {
