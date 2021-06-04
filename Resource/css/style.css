@@ -1011,10 +1011,9 @@ nav {
 }
 
 /*----------------------------------------------- FOOTER ---------------------------------------------------*/
-
 footer {
   background-color: #181818;
-  padding: 25px;
+  padding: 35px;
   font-family: "Poppins", sans-serif;
   -webkit-box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
   box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
@@ -1022,8 +1021,8 @@ footer {
 }
 
 .footer-img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   transition: all 0.2s;
   border-radius: 50%;
 }
@@ -1051,22 +1050,18 @@ footer {
 
 .fotter-list h2 {
   font-size: 110%;
-  text-transform: lowercase;
+  text-transform: none;
   font-weight: 900;
 }
 
-.fotter-list p {
-  font-size: 80%;
-  margin: 15px auto 0 auto;
-  padding: 0 8px;
-  border-bottom: 2px solid transparent;
-  width: fit-content;
-  transition: all 0.2s;
+.fotter-list a{
+  text-decoration: none;
+  color: white;
+  line-height: 200%;
 }
-
-.fotter-list p:hover {
+.fotter-list a:hover{
   color: #00ff19;
-  border-color: #00ff19;
+  text-decoration:wavy;
 }
 
 /*----------------------------------------------- ANIMATIONS ---------------------------------------------------*/
